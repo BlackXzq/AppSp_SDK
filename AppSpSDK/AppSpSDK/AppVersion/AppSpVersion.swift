@@ -9,5 +9,11 @@
 import UIKit
 
 class AppSpVersion: NSObject {
-
+    class func checkVersionUpdate(_ finished: @escaping (_ response: [String : Any]) -> ()) {
+        AppSpRequest.share.request(path: AppSpAppVersionPath, success: { (repData) in
+            finished(repData)
+        }) { (errorData) in
+            finished(errorData)
+        }
+    }
 }

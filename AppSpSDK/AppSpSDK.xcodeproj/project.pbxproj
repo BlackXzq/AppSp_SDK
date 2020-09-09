@@ -13,6 +13,10 @@
 		C1313EB325075AF5007521BC /* AppSpVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EB225075AF5007521BC /* AppSpVersion.swift */; };
 		C1313EB525075B04007521BC /* AppSpNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EB425075B04007521BC /* AppSpNotice.swift */; };
 		C1313EB825075BA8007521BC /* AppSpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EB725075BA8007521BC /* AppSpService.swift */; };
+		C1811DA72508A3F6007E6037 /* AppSpRSACrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DA62508A3F6007E6037 /* AppSpRSACrypt.swift */; };
+		C1811DA92508A6EE007E6037 /* AppSpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DA82508A6EE007E6037 /* AppSpUtils.swift */; };
+		C1811DAD2508AA1D007E6037 /* AppSpConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DAC2508AA1D007E6037 /* AppSpConfigure.swift */; };
+		C1811DAF2508ADA5007E6037 /* AppSpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DAE2508ADA5007E6037 /* AppSpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		C1313EB225075AF5007521BC /* AppSpVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpVersion.swift; sourceTree = "<group>"; };
 		C1313EB425075B04007521BC /* AppSpNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpNotice.swift; sourceTree = "<group>"; };
 		C1313EB725075BA8007521BC /* AppSpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpService.swift; sourceTree = "<group>"; };
+		C1811DA62508A3F6007E6037 /* AppSpRSACrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpRSACrypt.swift; sourceTree = "<group>"; };
+		C1811DA82508A6EE007E6037 /* AppSpUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpUtils.swift; sourceTree = "<group>"; };
+		C1811DAC2508AA1D007E6037 /* AppSpConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpConfigure.swift; sourceTree = "<group>"; };
+		C1811DAE2508ADA5007E6037 /* AppSpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				C1313E2D25074F84007521BC /* AppSpSDK.h */,
+				C1313EB725075BA8007521BC /* AppSpService.swift */,
 				C1313EB625075B0D007521BC /* Tools */,
 				C1313EB125075AB0007521BC /* AppNotice */,
 				C1313EB025075A87007521BC /* AppVersion */,
@@ -92,7 +101,10 @@
 		C1313EB625075B0D007521BC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				C1313EB725075BA8007521BC /* AppSpService.swift */,
+				C1811DAE2508ADA5007E6037 /* AppSpRequest.swift */,
+				C1811DA62508A3F6007E6037 /* AppSpRSACrypt.swift */,
+				C1811DA82508A6EE007E6037 /* AppSpUtils.swift */,
+				C1811DAC2508AA1D007E6037 /* AppSpConfigure.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1811DAD2508AA1D007E6037 /* AppSpConfigure.swift in Sources */,
 				C1313EAE25075921007521BC /* AppSpDeviceInfo.swift in Sources */,
+				C1811DAF2508ADA5007E6037 /* AppSpRequest.swift in Sources */,
 				C1313EB525075B04007521BC /* AppSpNotice.swift in Sources */,
+				C1811DA92508A6EE007E6037 /* AppSpUtils.swift in Sources */,
+				C1811DA72508A3F6007E6037 /* AppSpRSACrypt.swift in Sources */,
 				C1313EB825075BA8007521BC /* AppSpService.swift in Sources */,
 				C1313EB325075AF5007521BC /* AppSpVersion.swift in Sources */,
 			);
