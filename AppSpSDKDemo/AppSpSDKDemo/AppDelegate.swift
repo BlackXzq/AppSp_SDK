@@ -11,6 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var reachability: Reachability?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -22,7 +23,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Nav.navigationBar.isTranslucent = false
         self.window?.rootViewController = Nav
         
+        observeNetwork()
+        
         return true
+    }
+    
+    //=================网络状态监听=========================
+    func observeNetwork() {
+        
+        reachability = try? Reachability(hostname: "baidu.com")
+        reachability?.whenReachable = { reachability in
+            if reachability.connection == .wifi {
+                print("Reachable via WiFi")
+            } else {
+                print("Reachable via Cellular")
+            }
+        }
+        reachability?.whenUnreachable = { _ in
+            print("Not reachable")
+        }
+
+        do {
+            try reachability?.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
     }
     
 }

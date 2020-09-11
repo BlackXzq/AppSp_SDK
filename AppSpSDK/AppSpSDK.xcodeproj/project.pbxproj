@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C1313E2F25074F84007521BC /* AppSpSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C1313E2D25074F84007521BC /* AppSpSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1313EAE25075921007521BC /* AppSpDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EAD25075921007521BC /* AppSpDeviceInfo.swift */; };
-		C1313EAF250759A5007521BC /* AppSpDeviceInfo.swift in Headers */ = {isa = PBXBuildFile; fileRef = C1313EAD25075921007521BC /* AppSpDeviceInfo.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1313EB325075AF5007521BC /* AppSpVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EB225075AF5007521BC /* AppSpVersion.swift */; };
 		C1313EB525075B04007521BC /* AppSpNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EB425075B04007521BC /* AppSpNotice.swift */; };
 		C1313EB825075BA8007521BC /* AppSpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1313EB725075BA8007521BC /* AppSpService.swift */; };
@@ -17,6 +16,7 @@
 		C1811DA92508A6EE007E6037 /* AppSpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DA82508A6EE007E6037 /* AppSpUtils.swift */; };
 		C1811DAD2508AA1D007E6037 /* AppSpConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DAC2508AA1D007E6037 /* AppSpConfigure.swift */; };
 		C1811DAF2508ADA5007E6037 /* AppSpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DAE2508ADA5007E6037 /* AppSpRequest.swift */; };
+		C1811DC2250AFF79007E6037 /* AppSpService.swift in Headers */ = {isa = PBXBuildFile; fileRef = C1313EB725075BA8007521BC /* AppSpService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1313E2F25074F84007521BC /* AppSpSDK.h in Headers */,
-				C1313EAF250759A5007521BC /* AppSpDeviceInfo.swift in Headers */,
+				C1811DC2250AFF79007E6037 /* AppSpService.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppSpSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +354,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -375,7 +375,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppSpSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +388,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

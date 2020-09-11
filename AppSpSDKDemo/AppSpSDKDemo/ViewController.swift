@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     let tableView = UITableView()
     var actionList = [[String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "AppSp SDK Demo"
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         
         configureView()
         configureData()
+        
     }
     
     func configureView() {
@@ -38,20 +40,15 @@ class ViewController: UIViewController {
         actionList.append(["版本更新", "checkVersion"])
         actionList.append(["公告信息", "getNotcie"])
     }
-    
     //检查版本更新
     @objc func checkVersion() {
-        print("版本更新")
-        AppSpService.shareService.checkVersionUpdate { (result) in
-            print(result)
-        }
+        let controller = VersionController()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     //获取公告信息
     @objc func getNotcie() {
-        print("获取公告信息")
-        AppSpService.shareService.getNoticeInfo { (result) in
-            print(result)
-        }
+        let controller = NoticeController()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

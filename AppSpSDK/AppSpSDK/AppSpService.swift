@@ -17,19 +17,21 @@ public class AppSpService: NSObject {
     //初始化使用服务
     public func setAppkey(appKey: String) {
         _appKey = appKey
-        deviceInit()
+//        deviceInit()
     }
     //获取appkey 用于请求接口
     func getAppKey() -> String {
         return _appKey ?? ""
     }
     //获取版本更新接口
-    public func checkVersionUpdate(finished: @escaping (_ response: [String : Any]) -> ()) {
-        AppSpVersion.checkVersionUpdate(finished)
+    public func checkVersionUpdate(success: @escaping (_ response: [String : Any]) -> (),
+                                   failure: @escaping ((_ errorInfo: [String: Any]) -> ())) {
+        AppSpVersion.checkVersionUpdate(success: success, failure: failure)
     }
     //获取公告信息接口
-    public func getNoticeInfo(finished: @escaping (_ response: [String : Any]) -> ()) {
-        AppSpNotice.getNotice(finished)
+    public func getNoticeInfo(success: @escaping (_ response: [String : Any]) -> (),
+                              failure: @escaping ((_ errorInfo: [String: Any]) -> ())) {
+        AppSpNotice.getNotice(success: success, failure: failure)
     }
     //初始化设备信息
     private func deviceInit() {

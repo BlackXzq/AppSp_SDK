@@ -131,7 +131,11 @@ extension AppSpRequest {
     //解密后字符串转换成字典
     func toDecryptDict(encryptedStr: String) -> [String: Any]? {
         guard let jsonObject = encryptedStr.data(using: .utf8) else { return nil}
-        return try? JSONSerialization.jsonObject(with: jsonObject,
-                                                 options: JSONSerialization.ReadingOptions.init(rawValue: 0)) as? [String : Any]
+        do {
+            return try JSONSerialization.jsonObject(with: jsonObject,
+            options: JSONSerialization.ReadingOptions.init(rawValue: 0)) as? [String : Any]
+        } catch {
+            return nil
+        }
     }
 }
