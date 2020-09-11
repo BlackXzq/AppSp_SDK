@@ -20,7 +20,7 @@ func appSpLog<T>(_ message: T,
                  line: Int = #line)
 {
     #if DEBUG
-        print("[\(appSpGetCurrentTime())][Line \(line)] \((file as NSString).lastPathComponent)\(method): \(message)")
+        print("[AppSpSDK][\(appSpGetCurrentTime())][Line \(line)] \((file as NSString).lastPathComponent)\(method): \(message)")
     #endif
 }
 
