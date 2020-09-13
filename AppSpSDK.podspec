@@ -11,6 +11,4 @@ Pod::Spec.new do |s|
     s.swift_version = '4.0'
 
     s.source_files = 'AppSpSDK/AppSpSDK/**/*.swift'
-    end
-
 end
