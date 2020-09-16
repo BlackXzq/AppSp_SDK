@@ -22,7 +22,7 @@ class AppSpDeviceInfo: NSObject {
         return  [
            "brand": getBrandInfo(),
            "deviceId": getDeviceId(),
-//           "netWorkStatus": "WIFI",
+           "netWorkStatus": "",
            "osVersion": getOSVerison(),
            "platform": getPlatform(),
            "screenInfo": getScreenInfo(),

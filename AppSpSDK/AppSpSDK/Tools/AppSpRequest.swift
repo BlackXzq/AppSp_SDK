@@ -13,7 +13,7 @@ private let requestTimeOut: TimeInterval = 10
 //响应超时
 private let responseTimeOut: TimeInterval = 30
 //自定义错误码
-private let CustomErrorCode = "8888"
+private let CustomErrorCode = "604"
 
 class AppSpRequest: NSObject {
     static let share = AppSpRequest()
@@ -68,7 +68,11 @@ class AppSpRequest: NSObject {
             
         _apiSession.dataTask(with: request) { (data, response, error) in
             if (error != nil) {
-                failure(self.apiErrorInfo(code: CustomErrorCode, messge: "请求异常"))
+                if let err = error as NSError? {
+                    failure(self.apiErrorInfo(code: "\(err.code)", messge: err.localizedDescription))
+                } else {
+                    failure(self.apiErrorInfo(code: CustomErrorCode, messge: "请求异常"))
+                }
                 return
             }
             
@@ -114,8 +118,8 @@ extension AppSpRequest {
     //封装自定义error info
     func apiErrorInfo(code: String, messge: String) -> [String: Any]{
         return [
-            "errorCode": code,
-            "errorMsg": messge
+            "repCode": code,
+            "repMsg": messge
         ]
     }
     //加密前 把字典对象转换成需要加密的字符串
