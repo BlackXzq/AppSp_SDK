@@ -22,6 +22,7 @@ class AppSpDeviceInfo: NSObject {
         return  [
            "brand": getBrandInfo(),
            "deviceId": getDeviceId(),
+           "sdkVersion": "1.0.0",
            "netWorkStatus": "",
            "osVersion": getOSVerison(),
            "platform": getPlatform(),
