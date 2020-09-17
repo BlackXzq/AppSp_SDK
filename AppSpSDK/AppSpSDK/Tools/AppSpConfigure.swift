@@ -7,7 +7,7 @@
 //
 
 
-let AppSpBaseURL = "http://10.108.26.127:8081"
+let AppSpBaseURL = "http://10.108.26.128"
 // 获取公告
 let AppSpNoticePath = "/sp/phone/appNotice"
 // 获取版本更新

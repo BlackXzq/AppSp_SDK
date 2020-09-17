@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'AppSpSDK'
-    s.version      = '1.0.0'
+    s.version      = '1.0.1'
     s.summary      = 'ios AppSpSDK versionUpdate Notice'
     s.homepage     = 'https://github.com/BlackXzq/AppSp_SDK'
     s.license      = 'MIT'

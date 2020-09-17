@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "AppSp SDK Demo"
         //初始化AppSpService
-        AppSpService.shareService.setAppkey(appKey: "64cf5a851f37c6c0ab7a3186a2377d5d")
+//        AppSpService.shareService.setAppkey(appKey: "64cf5a851f37c6c0ab7a3186a2377d5d")
+        AppSpService.shareService.setAppkey(appKey: "b9abfa24ee644e1d8baa39cef165261d")
         
         configureView()
         configureData()
