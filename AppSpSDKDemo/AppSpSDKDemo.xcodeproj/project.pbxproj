@@ -12,7 +12,6 @@
 		C1313E4925075015007521BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1313E4725075015007521BC /* Main.storyboard */; };
 		C1313E4B25075024007521BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1313E4A25075024007521BC /* Assets.xcassets */; };
 		C1313E4E25075024007521BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1313E4C25075024007521BC /* LaunchScreen.storyboard */; };
-		C1313E5B25075573007521BC /* AppSpSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1313E5A25075573007521BC /* AppSpSDK.framework */; };
 		C1811DB32509AE94007E6037 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DB22509AE94007E6037 /* Reachability.swift */; };
 		C1811DB7250A0053007E6037 /* AppSpAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DB6250A0053007E6037 /* AppSpAlert.swift */; };
 		C1811DB9250A0621007E6037 /* AppSpVersionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DB8250A0621007E6037 /* AppSpVersionAlert.swift */; };
@@ -20,7 +19,23 @@
 		C1811DBD250A468D007E6037 /* VersionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DBC250A468D007E6037 /* VersionController.swift */; };
 		C1811DBF250A4CF6007E6037 /* NoticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DBE250A4CF6007E6037 /* NoticeController.swift */; };
 		C1811DC1250AF83D007E6037 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811DC0250AF83D007E6037 /* Utils.swift */; };
+		C191D99C25148920008EB56C /* AppSpSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191D99B25148920008EB56C /* AppSpSDK.framework */; };
+		C191D99D25148920008EB56C /* AppSpSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C191D99B25148920008EB56C /* AppSpSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C191D99E25148920008EB56C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C191D99D25148920008EB56C /* AppSpSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C1313E3E25075015007521BC /* AppSpSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSpSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +45,6 @@
 		C1313E4A25075024007521BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1313E4D25075024007521BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1313E4F25075024007521BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1313E5A25075573007521BC /* AppSpSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppSpSDK.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppSp_SDK-hfojecxjqerhpcfovoywxrlmoqgr/Build/Products/Debug-iphonesimulator/AppSpSDK.framework"; sourceTree = "<group>"; };
 		C1811DB22509AE94007E6037 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C1811DB6250A0053007E6037 /* AppSpAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpAlert.swift; sourceTree = "<group>"; };
 		C1811DB8250A0621007E6037 /* AppSpVersionAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpVersionAlert.swift; sourceTree = "<group>"; };
@@ -38,6 +52,7 @@
 		C1811DBC250A468D007E6037 /* VersionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionController.swift; sourceTree = "<group>"; };
 		C1811DBE250A4CF6007E6037 /* NoticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeController.swift; sourceTree = "<group>"; };
 		C1811DC0250AF83D007E6037 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C191D99B25148920008EB56C /* AppSpSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppSpSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1313E5B25075573007521BC /* AppSpSDK.framework in Frameworks */,
+				C191D99C25148920008EB56C /* AppSpSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +70,9 @@
 		C1313E3525075015007521BC = {
 			isa = PBXGroup;
 			children = (
-				C1313E5A25075573007521BC /* AppSpSDK.framework */,
 				C1313E4025075015007521BC /* AppSpSDKDemo */,
 				C1313E3F25075015007521BC /* Products */,
+				C191D99A25148920008EB56C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +112,14 @@
 			path = ASPUI;
 			sourceTree = "<group>";
 		};
+		C191D99A25148920008EB56C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C191D99B25148920008EB56C /* AppSpSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +130,7 @@
 				C1313E3A25075015007521BC /* Sources */,
 				C1313E3B25075015007521BC /* Frameworks */,
 				C1313E3C25075015007521BC /* Resources */,
+				C191D99E25148920008EB56C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
